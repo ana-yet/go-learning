@@ -15,4 +15,9 @@ func main() {
 	for i, v := range fruit {
 		println(i, v)
 	}
+
+	// loop through the array using traditional for loop
+	for i := 0; i < len(fruit); i++ {
+		println(i, fruit[i])
+	}
 }
