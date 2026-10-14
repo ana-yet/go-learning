@@ -17,4 +17,9 @@ func main() {
 	// length of the slice
 	fmt.Println(len(slice))
 
+	// slice len and capacity can be changed by appending elements to the slice
+	slice = append(slice, 7)
+	fmt.Println(slice) // output: [2 3 4 7]
+	fmt.Println(cap(slice)) // output: 5
+	fmt.Println(len(slice)) // output: 4
 }
